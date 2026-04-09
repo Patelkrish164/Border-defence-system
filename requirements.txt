@@ -1,0 +1,103 @@
+# ========================================
+# BORDER SURVEILLANCE AI — REQUIREMENTS
+# ========================================
+# Python 3.10+ required
+# Last updated: April 2026
+#
+# Install:
+#   pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# For dev tools only (testing, linting):
+#   pip install -r requirements-dev.txt
+# ========================================
+
+
+# ── COMPUTER VISION ─────────────────────
+# Pick ONE opencv variant — headless avoids GUI dependencies on servers
+opencv-python-headless>=4.8,<4.10
+Pillow==10.1.0
+imageio==2.33.0
+
+
+# ── OBJECT DETECTION (YOLOv8) ───────────
+ultralytics>=8.2
+torch>=2.2
+torchvision>=0.17
+
+
+# ── MACHINE LEARNING ────────────────────
+scikit-learn==1.3.2
+scipy==1.11.4
+numpy>=1.26
+pandas==2.1.3
+
+
+# ── AZURE CLOUD SERVICES ────────────────
+azure-storage-blob==12.19.0
+azure-cosmos==4.5.1
+azure-identity==1.15.0
+azure-keyvault-secrets==4.7.0
+
+
+# ── EMAIL & ALERTS ──────────────────────
+sendgrid==6.11.0
+yagmail==0.15.293
+
+
+# ── DASHBOARD ───────────────────────────
+streamlit==1.29.0
+plotly==5.18.0
+altair==5.2.0
+
+
+# ── DATA & VISUALISATION ────────────────
+matplotlib==3.8.2
+seaborn==0.13.0
+tqdm==4.66.1
+
+
+# ── WEB / API ───────────────────────────
+requests==2.31.0
+fastapi==0.104.1
+uvicorn==0.24.0
+
+
+# ── UTILITIES ───────────────────────────
+python-dotenv==1.0.0
+jsonschema==4.20.0
+python-dateutil==2.8.2
+colorlog==6.8.0
+
+
+# ── TESTING ─────────────────────────────
+pytest>=7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-benchmark==5.2.3
+pytest-html>=4.2.0
+
+
+# ========================================
+# TROUBLESHOOTING
+# ========================================
+#
+# If torch install fails (CPU-only machine):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# If opencv fails on Windows:
+#   pip install opencv-python==4.8.1.78
+#
+# If Azure SDK fails:
+#   pip install --upgrade azure-core && pip install -r requirements.txt
+#
+# GPU (CUDA 11.8) — uncomment if available:
+#   torch==2.1.0+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+#   torchvision==0.16.0+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+#
+# Linux system dependencies (if opencv fails):
+#   sudo apt-get install python3-dev libgl1-mesa-glx
+#
+# macOS (if ffmpeg needed):
+#   brew install ffmpeg
+# ========================================
