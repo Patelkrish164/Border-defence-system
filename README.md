@@ -1,8 +1,3 @@
-# Border-defence-system
-Here is a **professional and clean `README.md`** you can use for your project:
-
----
-
 # 🚨 Border Surveillance System
 
 ## 📌 Overview
@@ -117,13 +112,4 @@ Enrollment No: **220020107048**
 
 This project is developed for educational purposes and can be modified for academic or research use.
 
----
-
-If you want, I can also:
-
-* Add **badges (GitHub, license, tech icons)**
-* Customize it for **your exact code structure**
-* Make it more **ATS / recruiter friendly**
-
-Just tell me 👍
 
